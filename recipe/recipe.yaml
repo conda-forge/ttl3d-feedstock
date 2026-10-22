@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.0"
+  version: "0.9.1"
 
 package:
   name: ttl3d
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/ttl3d/ttl3d-${{ version }}.tar.gz
-  sha256: bf3fc9a97550066e100c3409f101803ceebf75a7455615ac12e702db4417d584
+  sha256: c66d80d913c130c79d5fd79f2d553b901194064fa2170d930303f3dc72c6e204
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: ${{ PYTHON }} -m pip install . -vv
   python:
     entry_points:
       - ttl3d = ttl3d.cli:main
@@ -51,13 +51,15 @@ tests:
 about:
   homepage: https://soheilabadifard.github.io/TTL_to_3D/
   repository: https://github.com/soheilabadifard/TTL_to_3D
-  summary: Turn any Turtle / RDF graph into a self-contained, offline 2D/3D HTML viewer
+  documentation: https://soheilabadifard.github.io/TTL_to_3D/tutorial.html
+  summary: Turn RDF graphs, SPARQL results and tables into a self-contained, offline 2D/3D HTML viewer
   description: |
-    ttl3d turns RDF (Turtle, N-Triples, RDF/XML, JSON-LD, TriG, N-Quads) or a SPARQL CONSTRUCT
-    result into a single self-contained HTML page that shows the graph in 3D or 2D, with a legend,
-    label search and a detail card per node. The page inlines all of its JavaScript (a bundle of
-    three.js and force-graph, whose licenses ship in ttl3d/vendor/LICENSES.md), so it opens from
-    disk and works offline. A Python API shows the same page inline in Jupyter.
+    ttl3d turns RDF (Turtle, N-Triples, RDF/XML, JSON-LD, TriG, N-Quads), a SPARQL CONSTRUCT or
+    DESCRIBE result, or tables (CSV/TSV files, pandas DataFrames) into a single self-contained HTML
+    page that shows the graph in 3D or 2D, with a legend, label search and a detail card per node.
+    The page inlines all of its JavaScript (a bundle of three.js and force-graph, whose licenses ship
+    in ttl3d/vendor/LICENSES.md), so it opens from disk and works offline. A Python API shows the
+    same page inline in Jupyter. Release notes: https://github.com/soheilabadifard/TTL_to_3D/releases
   license: MIT
   license_file:
     - LICENSE

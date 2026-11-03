@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.1"
+  version: "0.9.2"
 
 package:
   name: ttl3d
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/ttl3d/ttl3d-${{ version }}.tar.gz
-  sha256: c66d80d913c130c79d5fd79f2d553b901194064fa2170d930303f3dc72c6e204
+  sha256: 712786cb7347a0261002c1f90cc457583a49f28dfdff237fbcfa7724296a034a
 
 build:
   number: 0

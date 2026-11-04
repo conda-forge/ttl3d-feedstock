@@ -7,15 +7,18 @@ Home: https://soheilabadifard.github.io/TTL_to_3D/
 
 Package license: MIT
 
-Summary: Turn any Turtle / RDF graph into a self-contained, offline 2D/3D HTML viewer
+Summary: Turn RDF graphs, SPARQL results and tables into a self-contained, offline 2D/3D HTML viewer
 
 Development: https://github.com/soheilabadifard/TTL_to_3D
 
-ttl3d turns RDF (Turtle, N-Triples, RDF/XML, JSON-LD, TriG, N-Quads) or a SPARQL CONSTRUCT
-result into a single self-contained HTML page that shows the graph in 3D or 2D, with a legend,
-label search and a detail card per node. The page inlines all of its JavaScript (a bundle of
-three.js and force-graph, whose licenses ship in ttl3d/vendor/LICENSES.md), so it opens from
-disk and works offline. A Python API shows the same page inline in Jupyter.
+Documentation: https://soheilabadifard.github.io/TTL_to_3D/tutorial.html
+
+ttl3d turns RDF (Turtle, N-Triples, RDF/XML, JSON-LD, TriG, N-Quads), a SPARQL CONSTRUCT or
+DESCRIBE result, or tables (CSV/TSV files, pandas DataFrames) into a single self-contained HTML
+page that shows the graph in 3D or 2D, with a legend, label search and a detail card per node.
+The page inlines all of its JavaScript (a bundle of three.js and force-graph, whose licenses ship
+in ttl3d/vendor/LICENSES.md), so it opens from disk and works offline. A Python API shows the
+same page inline in Jupyter. Release notes: https://github.com/soheilabadifard/TTL_to_3D/releases
 
 Current build status
 ====================
